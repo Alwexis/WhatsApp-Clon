@@ -1,0 +1,187 @@
+body {
+  background-color: rgb(39, 52, 67);
+  min-height: 100vw;
+  overflow: hidden;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+main #title {
+  font-size: 2em;
+  font-weight: bold;
+  font-family: system-ui;
+  margin: 0;
+  padding: 0;
+  color: rgb(208, 233, 234);
+}
+main #content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  padding: 4vh 12vh;
+  align-items: center;
+}
+main #content #user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: flex-start;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 20%;
+  height: 100%;
+}
+main #content #user-info #profile-picture-container {
+  position: relative;
+  transition: all 0.2s;
+}
+main #content #user-info #profile-picture-container #change-profile-picture {
+  display: none;
+}
+main #content #user-info #profile-picture-container #profile-picture {
+  width: 16vh;
+  height: 16vh;
+  border-radius: 100%;
+}
+main #content #user-info #profile-picture-container:hover {
+  transition: all 0.2s;
+  cursor: pointer;
+  filter: brightness(0.8);
+}
+main #content #user-info #profile-picture-container:hover > #change-profile-picture {
+  transition: all 0.2s;
+  display: flex;
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main #content #user-info #profile-picture-container:hover > #change-profile-picture .change-pfp-camera {
+  font-size: 6vh;
+}
+main #content #user-info #username-container {
+  display: flex;
+  flex-direction: row;
+  color: rgb(208, 233, 234);
+  margin: 2vh;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+main #content #user-info #username-container #username {
+  font-size: 3vh;
+  font-weight: bold;
+  font-family: system-ui;
+  margin: 0vh 1vh;
+}
+main #content #user-info #username-container #change-username {
+  display: none;
+}
+main #content #user-info #username-container:hover > #change-username {
+  display: flex;
+}
+main #content #user-info #username-container:hover > #change-username .change-username-icon {
+  font-size: 2.5vh;
+}
+main #content #chat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  height: 35vw;
+  border: 1px solid whitesmoke;
+  border-radius: 1vh;
+}
+main #content #chat-container #chat {
+  display: flex;
+  flex-direction: column;
+  background: url("./../../assets/whatsapp background.jpg");
+  width: 100%;
+  height: 100%;
+  border-radius: 1vh 1vh 0vh 0vh;
+  overflow: auto;
+}
+main #content #chat-container #chat::-webkit-scrollbar {
+  width: 1vh;
+  background-color: rgb(39, 52, 67);
+  border-radius: 2vh;
+}
+main #content #chat-container #chat::-webkit-scrollbar-thumb {
+  background-color: #35897E;
+  border-radius: 1vh;
+}
+main #content #chat-container #chat .message {
+  display: flex !important;
+  align-items: center;
+  min-height: 4vh;
+  min-width: 4vh;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 2vh;
+  padding: 1vh 4vh;
+  color: whitesmoke;
+  border-radius: 2vh;
+}
+main #content #chat-container #chat .message p {
+  margin: 0;
+}
+main #content #chat-container #chat .other-message {
+  justify-content: flex-start;
+  justify-self: flex-start;
+  align-self: flex-start;
+  background: rgb(39, 52, 67);
+}
+main #content #chat-container #chat .own-message {
+  align-self: flex-end;
+  background: rgb(7, 94, 84);
+  align-items: center !important;
+  justify-content: flex-end;
+}
+main #content #chat-container #message-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 6vh;
+  background-color: rgb(7, 94, 84);
+  border-radius: 0vh 0vh 1vh 1vh;
+}
+main #content #chat-container #message-container .icon {
+  margin: 0vh 1.5vh;
+  color: whitesmoke;
+  font-size: 3.2vh;
+  cursor: pointer;
+}
+main #content #chat-container #message-container #attachment {
+  transform: rotate(45deg);
+}
+main #content #chat-container #message-container #message-input-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 80%;
+  height: 80%;
+  background: rgb(39, 52, 67);
+  border-radius: 2vh;
+  margin: 0vh 2vh;
+}
+main #content #chat-container #message-container #message-input-container #message-input {
+  width: 100%;
+  padding: 0vh 2.5vh;
+  height: 100%;
+  background: transparent;
+  border: none;
+  color: whitesmoke;
+  font-size: 2vh;
+  font-family: system-ui;
+  outline: none;
+}/*# sourceMappingURL=main.css.map */

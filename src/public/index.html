@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="icon" href="./assets/wotsapp.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>WotsApp</title>
+</head>
+<body>
+    <main>
+        <span id="title">WotsApp</span>
+        <section id="content">
+            <section id="user-info">
+                <div id="profile-picture-container">
+                    <img id="profile-picture" alt="profile_picture">
+                    <div id="change-profile-picture">
+                        <span class="change-pfp-camera material-icons">
+                            add_a_photo
+                        </span>
+                    </div>
+                </div>
+                <div id="username-container">
+                    <span id="username">x-potato35</span>
+                    <div onclick="changeUsername()" id="change-username">
+                        <span class="change-username-icon material-icons">
+                            edit
+                        </span>
+                    </div>
+                </div>
+            </section>
+            <section id="chat-container">
+                <div id="chat">
+
+                </div>
+                <div id="message-container">
+                    <span id="emojies" class="icon material-icons">
+                        sentiment_very_satisfied
+                    </span>
+                    <span id="attachment" class="icon material-icons">
+                        attach_file
+                    </span>
+                    <div id="message-input-container">
+                        <input onkeypress="keyPress(event)" placeholder="Escribe un mensaje aquí" id="message-input" type="text">
+                    </div>
+                    <span id="audio" class="icon material-icons">
+                        mic
+                    </span>
+                </div>
+            </section>
+        </section>
+    </main>
+    <script src="/socket.io/socket.io.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
