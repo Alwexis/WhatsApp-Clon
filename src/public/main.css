@@ -92,6 +92,58 @@ main #content #user-info #username-container:hover > #change-username {
 main #content #user-info #username-container:hover > #change-username .change-username-icon {
   font-size: 2.5vh;
 }
+main #content #user-info #room-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: whitesmoke;
+}
+main #content #user-info #room-container #actual-room {
+  display: flex;
+  align-items: center;
+  font-size: 3.2vh;
+  font-weight: 600;
+}
+main #content #user-info #room-container #actual-room #room-name {
+  margin: 0vh 1vh;
+  font-size: 3vh;
+  font-weight: 100;
+}
+main #content #user-info #room-container #join-create-room {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2vh;
+}
+main #content #user-info #room-container #join-create-room #join-create-room-text {
+  font-size: 3vh;
+}
+main #content #user-info #room-container #join-create-room #join-create-room-input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2vh;
+}
+main #content #user-info #room-container #join-create-room #join-create-room-input-container input {
+  border-radius: 2vh;
+  padding: 1vh 2vh;
+}
+main #content #user-info #room-container #join-create-room #join-create-room-input-container input:focus {
+  outline: none;
+}
+main #content #user-info #room-container #join-create-room #join-create-room-input-container div {
+  border: 1px solid whitesmoke;
+  border-radius: 2vh;
+  padding: 1vh 4vh;
+  margin: 1vh 2vh;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+main #content #user-info #room-container #join-create-room #join-create-room-input-container div:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: rgb(39, 52, 67);
+  transition: all 0.2s;
+}
 main #content #chat-container {
   display: flex;
   flex-direction: column;
@@ -128,24 +180,54 @@ main #content #chat-container #chat .message {
   width: -moz-fit-content;
   width: fit-content;
   margin: 2vh;
-  padding: 1vh 4vh;
+  padding: 2vh 1.5vh 2vh 0vh;
   color: whitesmoke;
   border-radius: 2vh;
 }
 main #content #chat-container #chat .message p {
   margin: 0;
 }
+main #content #chat-container #chat .join-message {
+  justify-content: center;
+  align-self: center;
+  color: gainsboro;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 2vh;
+  padding: 1vh 2vh;
+  margin: 2vh;
+}
+main #content #chat-container #chat .join-message p {
+  margin: 0;
+  margin-top: 1vh;
+}
 main #content #chat-container #chat .other-message {
-  justify-content: flex-start;
+  display: flex !important;
+  flex-direction: row;
+  align-items: center;
   justify-self: flex-start;
   align-self: flex-start;
   background: rgb(39, 52, 67);
+}
+main #content #chat-container #chat .other-message img {
+  width: 6vh;
+  height: 6vh;
+  border-radius: 100%;
+  padding: 0vh 1vh;
+}
+main #content #chat-container #chat .other-message div {
+  padding: 0vh 1vh;
+}
+main #content #chat-container #chat .other-message div .message-owner {
+  align-self: flex-start;
+  font-weight: 600;
+  margin-bottom: 1.25vh;
 }
 main #content #chat-container #chat .own-message {
   align-self: flex-end;
   background: rgb(7, 94, 84);
   align-items: center !important;
   justify-content: flex-end;
+  padding: 1vh 2vh !important;
 }
 main #content #chat-container #message-container {
   display: flex;

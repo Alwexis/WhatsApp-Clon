@@ -17,7 +17,7 @@
             <section id="user-info">
                 <div id="profile-picture-container">
                     <img id="profile-picture" alt="profile_picture">
-                    <div id="change-profile-picture">
+                    <div id="change-profile-picture" onclick="changePfp()">
                         <span class="change-pfp-camera material-icons">
                             add_a_photo
                         </span>
@@ -29,6 +29,19 @@
                         <span class="change-username-icon material-icons">
                             edit
                         </span>
+                    </div>
+                </div>
+                <div id="room-container">
+                    <span id="actual-room">
+                        Actual Room:
+                        <p id="room-name"></p>
+                    </span>
+                    <div id="join-create-room">
+                        <span id="join-create-room-text">Join or Create a Room</span>
+                        <div id="join-create-room-input-container">
+                            <input id="join-create-room-input" type="text" placeholder="global">
+                            <div onclick="changeRoom()">Join/Create</div>
+                        </div>
                     </div>
                 </div>
             </section>
