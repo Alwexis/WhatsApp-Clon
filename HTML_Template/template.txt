@@ -5,7 +5,7 @@
     <p>
         WotsApp is a WhatsApp clone maded with HTML, SCSS, JavaScript in the Client Side, and NodeJS and <a href="https://socket.io">Socket.io</a> in Server Side.
         Its a project maded only for learning purposes and to see how does Web Sockets works, so it doesn't have all the features of the original app.
-        I'm planning to transform this project into a real Mobile App and then add the features that WhatsApp already have, and a lot of new ones, so stay tuned (╹ڡ╹ )!
+        I'm planning to transform this project into a real Mobile App and then add the features that WhatsApp already have, and a lot of new ones, so stay tuned <span style="color: var(--colors-purple);">(╹ڡ╹ )</span>!
     </p>
 
     <div class="button-container">
